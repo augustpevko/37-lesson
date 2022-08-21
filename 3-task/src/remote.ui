@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RemoteWindow</class>
+ <widget class="QMainWindow" name="RemoteWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>240</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>240</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Remote</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>7</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="text">
+           <string>9</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="text">
+           <string>6</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="text">
+           <string>8</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="text">
+           <string>⏩️</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="text">
+           <string>⏪️</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly</set>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>240</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber7()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber8()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber9()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>clickedNumber0()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>prevOne()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>nextOne()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>downVolume()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>RemoteWindow</receiver>
+   <slot>upVolume()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clickedNumber1()</slot>
+  <slot>clickedNumber2()</slot>
+  <slot>clickedNumber3()</slot>
+  <slot>clickedNumber4()</slot>
+  <slot>clickedNumber5()</slot>
+  <slot>clickedNumber6()</slot>
+  <slot>clickedNumber7()</slot>
+  <slot>clickedNumber8()</slot>
+  <slot>clickedNumber9()</slot>
+  <slot>clickedNumber0()</slot>
+  <slot>prevOne()</slot>
+  <slot>nextOne()</slot>
+  <slot>upVolume()</slot>
+  <slot>downVolume()</slot>
+ </slots>
+</ui>
